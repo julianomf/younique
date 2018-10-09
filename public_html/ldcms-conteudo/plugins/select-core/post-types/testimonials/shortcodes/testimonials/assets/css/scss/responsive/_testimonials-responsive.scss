@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Blog List shortcode responsive style - begin
+   ========================================================================== */
+@include laptop-landscape-medium {
+	
+	.qodef-testimonials-holder {
+			
+		$columns_number: ('four', 'five', 'six');
+		
+		@for $i from 0 to length($columns_number) {
+			&.qodef-testimonials-#{nth($columns_number,$i+1)}-columns {
+				$column_width: 100% / 3;
+				
+				.qodef-pl-item {
+					width: $column_width;
+				}
+				
+				@media only screen and (min-width: $ipad-portrait-plus-pixel) {
+					
+					.qodef-pl-item {
+						
+						&:nth-child(3n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@include ipad-portrait {
+	
+	.qodef-testimonials-holder {
+		.qodef-pl-item {
+			width: 100% !important; // !important is set to override all other stronger selectors
+		}
+	}
+}
+/* ==========================================================================
+   Blog List shortcode responsive style - end
+   ========================================================================== */

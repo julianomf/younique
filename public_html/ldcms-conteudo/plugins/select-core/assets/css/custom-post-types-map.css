@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+.qodef-testimonials-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-content,
+.qodef-testimonials-holder .qodef-testimonial-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-testimonials-holder.qodef-testimonials-two-columns .qodef-pl-item {
+  width: 50%;
+}
+
+@media only screen and (min-width: 769px) {
+  .qodef-testimonials-holder.qodef-testimonials-two-columns .qodef-pl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.qodef-testimonials-holder.qodef-testimonials-three-columns .qodef-pl-item {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 769px) {
+  .qodef-testimonials-holder.qodef-testimonials-three-columns .qodef-pl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.qodef-testimonials-holder.qodef-testimonials-four-columns .qodef-pl-item {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .qodef-testimonials-holder.qodef-testimonials-four-columns .qodef-pl-item:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.qodef-testimonials-holder.qodef-testimonials-five-columns .qodef-pl-item {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .qodef-testimonials-holder.qodef-testimonials-five-columns .qodef-pl-item:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.qodef-testimonials-holder.qodef-testimonials-six-columns .qodef-pl-item {
+  width: 16.66667%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .qodef-testimonials-holder.qodef-testimonials-six-columns .qodef-pl-item:nth-child(6n+1) {
+    clear: both;
+  }
+}
+
+.qodef-testimonials-holder.qodef-huge-space .qodef-outer-space .qodef-item-space {
+  margin-bottom: 46px;
+}
+
+.qodef-testimonials-holder .qodef-testimonials.qodef-owl-slider {
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.qodef-testimonials-holder .qodef-testimonials.qodef-owl-slider .qodef-pl-item {
+  width: 100% !important;
+  float: none !important;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-image {
+  float: left;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-image img {
+  width: auto !important;
+  border-radius: 5em;
+}
+
+.qodef-testimonials-holder .qodef-pl-item {
+  float: left;
+  box-sizing: border-box;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-author-holder {
+  padding-left: 94px;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-author-name {
+  margin: 0;
+  padding-top: 6px;
+}
+
+.qodef-testimonials-holder .qodef-testimonials-author-job {
+  margin: 7px 0 0;
+}
+
+.qodef-testimonials-holder .qodef-testimonial-text {
+  margin: 9px 0 10px;
+}
+
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/select-core/assets/css/custom-post-types-map.css.map */

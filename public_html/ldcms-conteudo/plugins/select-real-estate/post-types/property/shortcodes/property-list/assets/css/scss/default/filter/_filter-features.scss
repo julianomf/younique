@@ -1,0 +1,12 @@
+.qodef-property-list-holder {
+    .qodef-property-list-filter-part {
+        .qodef-filter-features-holder {
+            .qodef-feature-item {
+                display: inline-block;
+                float: left;
+                width: 25%;
+                @extend %checkbox-style;
+            }
+        }
+    }
+}

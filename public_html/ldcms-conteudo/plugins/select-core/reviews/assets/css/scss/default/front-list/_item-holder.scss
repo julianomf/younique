@@ -1,0 +1,18 @@
+.qodef-comment-list {
+    .qodef-comment-text {
+        .qodef-comment-name {
+            float: none;
+            display: inline-block;
+            margin-right: 7px;
+            vertical-align: middle;
+        }
+    }
+    .qodef-review-rating {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .qodef-rating-value {
+        font-size: 11px;
+        color: $first-main-color;
+    }
+}

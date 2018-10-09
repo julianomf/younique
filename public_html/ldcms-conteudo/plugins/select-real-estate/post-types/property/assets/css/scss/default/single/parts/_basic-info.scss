@@ -1,0 +1,33 @@
+/* Basic info section start */
+.qodef-property-basic-info-holder {
+    .qodef-property-param {
+        display: inline-block;
+        width: 25%;
+        float: left;
+        
+        .qodef-property-label {
+            display: block;
+            font-weight: 500;
+            font-family: $default-heading-font;
+            color: $second-heading-color;
+            font-size: 13px;
+            line-height: 1;
+            margin-bottom: 11px;
+        }
+        
+        .qodef-property-value {
+            display: block;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+            font-family: $default-heading-font;
+            color: $second-heading-color;
+            font-size: 13px;
+            line-height: 1;
+        }
+        @include phone-landscape {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+    }
+}
+/* Basic info section end */

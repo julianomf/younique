@@ -1,0 +1,28 @@
+.qodef-property-reviews {
+	padding-top: 30px;
+	box-sizing: border-box;
+	.qodef-comment-holder-inner {
+		padding: 27px 0 30px;
+	}
+	.qodef-comment-list {
+		.qodef-comment-name {
+			display: inline-block;
+		}
+	}
+	.comment-respond {
+		position: relative;
+	}
+	.qodef-comment-form-rating {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		@include phone-landscape {
+			position: initial;
+		}
+	}
+	
+	.qodef-comment-form-inner {
+		padding-bottom: 30px;
+	}
+}

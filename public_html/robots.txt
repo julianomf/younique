@@ -1,0 +1,8 @@
+User-agent: *
+
+ Disallow: /backend/ 
+ Disallow: /trackback/ 
+ Disallow: /xmlrpc.php 
+ Disallow: /feed/ 
+
+ Sitemap: http://youniqueimobiliaria.com.br/sitemap.xml

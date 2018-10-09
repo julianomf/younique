@@ -1,0 +1,82 @@
+.qodef-property-single-holder {
+    .qodef-property-single-outer {
+        background: #fff;
+        margin-top: 40px;
+        margin-bottom: 100px;
+        padding: 0 20px 30px;
+        box-sizing: border-box;
+    }
+    .qodef-property-single-gallery-holder {
+        background-color: #fff;
+        padding-bottom: 14px;
+        box-sizing: border-box;
+    }
+    .qodef-property-label-items-holder {
+        @include qodefTableLayout();
+        padding: 35px 0;
+        border-bottom: 1px solid $default-border-color;
+    }
+    .qodef-property-label-style {
+        @include qodefTableCellLayout();
+        vertical-align: top;
+        width: 20%;
+        * {
+            margin: 0;
+        }
+    }
+    .qodef-property-items-style {
+        @include qodefTableCellLayout();
+        vertical-align: top;
+        width: 80%;
+    }
+
+    .qodef-label-items-item {
+        @include qodefTableLayout();
+        padding: 0 0 15px;
+    }
+    .qodef-label-items-label {
+        @include qodefTableCellLayout();
+        vertical-align: top;
+        width: 50%;
+        @include qodefHeadingSix();
+        line-height: 1;
+        color: #5b5a5a;
+
+        .qodef-label-text {
+            vertical-align: middle;
+        }
+        .qodef-label-icon img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 11px;
+            height: 11px;
+            margin-right: 10px;
+        }
+    }
+    .qodef-label-items-value {
+        @include qodefTableCellLayout();
+        @include qodefHeadingSixBold();
+        vertical-align: top;
+        width: 50%;
+        line-height: 1.5em;
+    }
+
+    .qodef-grid-col-6 {
+        @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+            &:nth-child(2n+1) {
+                clear: both;
+            }
+        }
+    }
+
+    .qodef-property-attachment a {
+        color: $first-main-color;
+
+    }
+}
+
+.single-property {
+    aside.qodef-sidebar {
+        margin: 40px 0 60px;
+    }
+}

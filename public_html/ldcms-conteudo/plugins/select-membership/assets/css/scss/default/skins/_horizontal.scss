@@ -1,0 +1,149 @@
+.page-template-user-dashboard {
+    .qodef-membership-dashboard-nav-holder {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+
+        .qodef-membership-dashboard-nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            list-style-type: none;
+            justify-content: space-between;
+            border-bottom: 1px solid $default-border-color;
+            margin: 33px 0 0;
+
+            li {
+                align-self: center;
+
+                &.qodef-active-dash {
+                    a, span {
+                        color: #000;
+                    }
+                }
+
+                a {
+                    position: relative;
+                    display: block;
+                    text-align: center;
+                    margin: 0;
+                    box-sizing: border-box;
+                    font-family: $default-heading-font;
+                    font-size: 13px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: #939393;
+                    padding: 41px 0;
+
+                    > span {
+                        padding: 0 5px;
+                    }
+
+                    &:hover {
+                        &, h6, span {
+                            color: $first-main-color;
+                        }
+                    }
+
+                    .qodef-dash-icon {
+                        font-size: 16px;
+                        color: #939393;
+                        background-color: transparent;
+                        vertical-align: middle;
+                        display: inline-block;
+                        line-height: 1em;
+                    }
+
+                    .qodef-dash-label {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .qodef-membership-dashboard-content-holder {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        margin: 39px 0 0;
+
+        label {
+            font-size: 13px;
+            font-family: $default-heading-font;
+            font-weight: 500;
+            color: #5b5a5a;
+            margin: 8px 0;
+            display: inline-block;
+        }
+
+        table {
+            font-family: $default-heading-font;
+            color: #b3b2b2;
+            font-size: 13px;
+
+            thead {
+                color: #5b5a5a;
+                font-weight: 500;
+            }
+
+            td {
+                padding: 13px 10px;
+            }
+        }
+    
+        .qodef-dashboard-remove-image {
+            margin-left: 10px;
+        }
+        
+        .qodef-membership-user-profile-page {
+            p {
+                margin: 0;
+            }
+            .qodef-profile-image {
+                margin-top: 29px;
+                margin-bottom: 26px;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .qodef-profile-section {
+                margin-bottom: 6px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .qodef-profile-label,
+            .qodef-profile-value {
+                font-size: 13px;
+                font-family: $default-heading-font;
+                font-weight: 400;
+                color: #5b5a5a;
+                display: inline-block;
+            }
+            .qodef-profile-label {
+                font-weight: 500;
+            }
+        }
+
+        .qodef-re-profile-packages-holder {
+            margin-top: 53px;
+        }
+
+        .qodef-membership-buy-package {
+            margin-top: 20px;
+        }
+
+        .qodef-re-profile-property-item-buttons .qodef-property-item-edit {
+            margin-right: 3px;
+        }
+
+        .qodef-membership-page-title {
+            margin-bottom: 17px;
+        }
+    }
+}

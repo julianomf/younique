@@ -1,0 +1,69 @@
+/* Property filter section css - start */
+.qodef-property-list-holder {
+    .qodef-property-list-filter-part {
+        .qodef-filter-row {
+            @include qodefTableLayout();
+            margin-bottom: 27px;
+        }
+
+        .qodef-filter-section {
+            @include qodefTableCellLayout();
+            padding: 0 14px;
+            box-sizing: border-box;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            &.qodef-section-type ul {
+                margin: 0;
+            }
+
+        }
+
+        .qodef-filter-section-3 {
+            width: 25%;
+        }
+
+        .qodef-filter-section-4 {
+            width: 33.3333%;
+        }
+
+        .qodef-filter-section-5 {
+            width: 41.6666%;
+        }
+
+        .qodef-filter-section-6 {
+            width: 50%;
+        }
+
+        .qodef-filter-section-9 {
+            width: 75%;
+        }
+
+        .qodef-filter-section-12 {
+            width: 100%;
+        }
+
+        .select2-container--default {
+            .select2-selection--single {
+                .select2-selection__rendered {
+                    padding: 0 40px 0 20px;
+                }
+                .select2-selection__arrow {
+                    border-left: 0;
+                }
+            }
+        }
+    }
+
+    .select2 {
+        width: 100% !important;
+    }
+}
+
+/* Property filter section css - end */

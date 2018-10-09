@@ -1,0 +1,52 @@
+/* Simple item layout start */
+.qodef-property-list-holder {
+    &.qodef-pl-layout-simple {
+        .qodef-pl-item {
+            margin: 0 0 18px;
+
+            .qodef-item-content-wrapper {
+                @include qodefTableLayout();
+            }
+            .qodef-item-image-section {
+                @include qodefTableCellLayout();
+                width: 44px;
+                vertical-align: top;
+            }
+
+            .qodef-item-content {
+                @include qodefTableCellLayout();
+                width: calc(100% - 44px);
+                padding-left: 13px;
+                line-height: 0;
+
+                .qodef-pli-title {
+                    margin: 0 0 3px 0;
+                    font-size: 13px;
+                    line-height: 15px;
+                    font-weight: 500;
+                    font-family: $default-heading-font;
+                }
+            }
+
+            .qodef-property-price {
+                font-weight: 400;
+                color: $first-main-color;
+                font-size: 13px;
+                line-height: 15px;
+                font-family: $default-heading-font;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .qodef-item-info,
+            .qodef-property-types {
+                color: #bebebe;
+                font-size: 13px;
+                line-height: 15px;
+                font-family: $default-heading-font;
+            }
+        }
+    }
+}
+
+/* Simple item layout end */

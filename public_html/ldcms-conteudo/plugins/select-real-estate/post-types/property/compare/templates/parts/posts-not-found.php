@@ -1,0 +1,1 @@
+<p class="qodef-re-ci-not-found"><?php esc_html_e( 'No properties found to compare.', 'select-real-estate' ); ?></p>

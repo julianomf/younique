@@ -1,0 +1,196 @@
+/* ==========================================================================
+   Process shortcode style - begin
+   ========================================================================== */
+
+.qodef-process-holder {
+    &.qodef-process-horizontal {
+        position: relative;
+        margin-top: 40px;
+
+        .qodef-process-item-holder {
+            text-align: center;
+            float: left;
+            width: 25%;
+            visibility: hidden;
+            opacity: 0;
+
+            @include qodefTransform(scale(1.3));
+            @include qodefTransition(all 0.25s ease-in-out);
+
+            .qodef-pi-title {
+                margin: 0;
+            }
+
+            .no-touch & {
+                visibility: visible;
+            }
+
+            .touch & {
+                opacity: 1;
+                @include qodefTransform(scale(1));
+                visibility: visible;
+            }
+
+            &.qodef-pi-highlighted {
+                margin-top: -23px;
+
+                .qodef-pi-content-holder {
+                    margin-top: 39px;
+                }
+
+                .qodef-pi {
+                    width: 224px;
+                    height: 224px;
+                }
+
+                .qodef-pi-holder-inner {
+                    width: 100%;
+                }
+
+                .qodef-pi-holder .qodef-pi .qodef-pi-number {
+                    top: 1px;
+                    right: 18px;
+                }
+            }
+
+            &:last-child {
+                .qodef-pi:after {
+                    display: none;
+                }
+            }
+
+            &:first-child {
+                .qodef-pi:before {
+                    display: none;
+                }
+            }
+
+            &.item-appeared {
+                @include qodefTransform(scale(1));
+                opacity: 1;
+            }
+        }
+
+        &.qodef-process-holder-items-three {
+            .qodef-process-item-holder {
+                width: 33.33%;
+            }
+        }
+
+        .qodef-pi-content-holder {
+            margin-top: 62px;
+        }
+
+        .qodef-pi-text-holder {
+            margin: 10px 22px;
+        }
+
+        .qodef-pi-holder {
+            position: relative;
+            overflow: hidden;
+
+            .qodef-pi {
+                display: block;
+                position: relative;
+                width: 178px;
+                height: 178px;
+                margin: 0 auto;
+                left: 0;
+                box-sizing: border-box;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 100%;
+                    height: 2px;
+                    width: 100%;
+                    background-color: $default-border-color;
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 100%;
+                    height: 2px;
+                    width: 100%;
+                    background-color: $default-border-color;
+                }
+
+                .qodef-pi-inner {
+                    height: 100%;
+                    box-sizing: border-box;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    z-index: 1;
+                }
+
+                &.icon {
+                    .qodef-pi-inner {
+                        background-color: #fff;
+                        color: $default-heading-color;
+                    }
+                }
+
+                img, .qodef-icon-shortcode {
+                    display: inline-block;
+                    position: relative;
+                    max-width: 100%;
+                    top: 50%;
+
+                    @include qodefTransform(translate3d(0,-50%,0));
+
+                    @include qodefTransitionTransform(.3s ease-out);
+
+                    &:hover {
+                        @include qodefTransform(translate3d(0,-50%,0) scale(1.15));
+                    }
+                }
+
+                .qodef-pi-number {
+                    position: absolute;
+                    top: 0;
+                    right: 8px;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 43px;
+                    color: #fff;
+                    background-color: #000;
+                    font-size: 13px;
+                    font-weight: 400;
+                    border-radius: 100%;
+                    z-index: 2;
+                    font-family: $default-heading-font;
+                }
+            }
+        }
+    }
+
+    &.qodef-process-light {
+        .qodef-pi-title, .qodef-pi-text-holder {
+            color: #fff;
+        }
+
+        .qodef-pi-holder:after {
+            color: #fff;
+        }
+    }
+    
+    &.qodef-process-dark {
+        .qodef-pi-holder {
+            .qodef-pi:after,
+            .qodef-pi:before {
+                background-color: rgba(#000, 0.1);
+            }
+        }
+    }
+
+    .qodef-pi-link {
+        @include qodefAbsoluteHolderLayout();
+    }
+}
+
+/* ==========================================================================
+   Process shortcode style - end
+   ========================================================================== */

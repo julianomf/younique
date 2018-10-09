@@ -1,0 +1,20 @@
+@media only screen and (max-width: 1024px){
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+/* generated in /home/storage/0/0a/e9/youniqueimobiliaria/public_html/ldcms-conteudo/themes/younique/assets/custom-styles/general-custom-styles-responsive.php eiddo_qodef_h1_responsive_styles3 function */
+h1 { font-size: 45px;}
+
+}
+
+@media only screen and (min-width: 681px) and (max-width: 768px){
+}
+
+@media only screen and (max-width: 680px){
+/* generated in /home/storage/0/0a/e9/youniqueimobiliaria/public_html/ldcms-conteudo/themes/younique/assets/custom-styles/general-custom-styles-responsive.php eiddo_qodef_h1_responsive_styles2 function */
+h1 { font-size: 37px;}
+
+/* generated in /home/storage/0/0a/e9/youniqueimobiliaria/public_html/ldcms-conteudo/themes/younique/assets/custom-styles/general-custom-styles-responsive.php eiddo_qodef_h2_responsive_styles2 function */
+h2 { font-size: 30px;}
+
+}

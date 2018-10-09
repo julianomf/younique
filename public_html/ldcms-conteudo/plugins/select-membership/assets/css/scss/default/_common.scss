@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Qodef Membership Plugin Style - begin
+   ========================================================================== */
+
+.qodef-social-login-holder input[type="text"],
+.qodef-social-login-holder input[type="email"],
+.qodef-social-login-holder input[type="password"],
+.qodef-social-register-holder input[type="text"],
+.qodef-social-register-holder input[type="email"],
+.qodef-social-register-holder input[type="password"],
+.qodef-social-reset-password-holder input[type="text"],
+.qodef-social-reset-password-holder input[type="email"],
+.qodef-social-reset-password-holder input[type="password"] {
+    position: relative;
+    width: 100%;
+    margin: 0 0 14px;
+    padding: 12px 20px;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: inherit;
+    color: $default-text-color;
+    background-color: transparent;
+    border: 1px solid $default-border-color;
+    outline: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+
+    &:focus {
+        border-color: $default-heading-color;
+    }
+
+    @include qodefPlaceholder {
+        color: $default-text-color;
+    }
+}
+
+.qodef-membership-response-holder{
+	.qodef-membership-response {
+		display: block;
+		margin: 14px 0 0;
+		font-size: 13px;
+		font-weight: 700;
+		
+		&.qodef-membership-message-sent {
+			font-weight: 300;
+			color: #000;
+		}
+
+		&.qodef-membership-message-succes {
+			color: #000;
+		}
+
+		&.qodef-membership-message-error {
+			color: #ff3d27;
+		}
+	}
+}
+
+.qodef-wp-register-holder{
+	.qodef-register-notice h5 {
+		margin: 0;
+	}
+}
+
+.qodef-dashboard-field-holder .qodef-checkbox-style {
+	.qodef-checkbox-wrapper {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		@extend %checkbox-style;
+		.qodef-checkbox-label {
+			margin: 0;
+		}
+	}
+}
+/* ==========================================================================
+   Qodef Membership Plugin Style - end
+   ========================================================================== */

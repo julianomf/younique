@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Side area styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+# Side area style - begin
+========================================================================== */
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener,
+.qodef-light-header .qodef-top-bar .qodef-side-menu-button-opener {
+  color: #fff !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener.opened, .qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener:hover,
+.qodef-light-header .qodef-top-bar .qodef-side-menu-button-opener.opened,
+.qodef-light-header .qodef-top-bar .qodef-side-menu-button-opener:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener,
+.qodef-dark-header .qodef-top-bar .qodef-side-menu-button-opener {
+  color: #333 !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener.opened, .qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener:hover,
+.qodef-dark-header .qodef-top-bar .qodef-side-menu-button-opener.opened,
+.qodef-dark-header .qodef-top-bar .qodef-side-menu-button-opener:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+.qodef-side-menu-button-opener {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.qodef-side-menu-button-opener .qodef-side-menu-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px 0 0;
+  color: currentColor;
+}
+
+.qodef-side-menu-button-opener .qodef-side-menu-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qodef-side-menu-button-opener.opened, .qodef-side-menu-button-opener:hover {
+  color: #078169;
+}
+
+.qodef-side-menu-button-opener.qodef-side-menu-button-opener-icon-pack .qodef-side-menu-icon {
+  font-size: 20px;
+}
+
+.qodef-side-menu-button-opener.qodef-side-menu-button-opener-icon-pack .qodef-side-menu-icon * {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-side-menu-button-opener.qodef-side-menu-button-opener-icon-pack .qodef-side-menu-icon *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-side-menu-button-opener.qodef-side-menu-button-opener-svg-path .qodef-side-menu-icon > * {
+  vertical-align: middle;
+}
+
+.qodef-side-menu-button-opener.qodef-side-menu-button-opener-svg-path .qodef-side-menu-icon > *,
+.qodef-side-menu-button-opener.qodef-side-menu-button-opener-svg-path .qodef-side-menu-icon path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.qodef-side-menu {
+  position: fixed;
+  top: 0;
+  right: -405px;
+  width: 405px;
+  height: 100%;
+  min-height: 100%;
+  padding: 66px 65px 36px;
+  background-color: #000;
+  text-align: left;
+  overflow: hidden;
+  visibility: hidden;
+  z-index: 9999;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+  box-shadow: -3px 0 3px rgba(0, 0, 0, 0.04);
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.qodef-side-menu .qodef-close-side-menu-holder {
+  position: absolute;
+  top: 33px;
+  right: 40px;
+  z-index: 1000;
+}
+
+.admin-bar .qodef-side-menu .qodef-close-side-menu-holder {
+  top: 68px;
+}
+
+.qodef-side-menu a.qodef-close-side-menu {
+  display: block;
+  z-index: 1000;
+  color: #000;
+}
+
+.qodef-side-menu a.qodef-close-side-menu:hover {
+  color: #a3a3a3;
+}
+
+.qodef-side-menu a.qodef-close-side-menu.qodef-close-side-menu-icon-pack {
+  font-size: 20px;
+}
+
+.qodef-side-menu a.qodef-close-side-menu.qodef-close-side-menu-icon-pack * {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-side-menu a.qodef-close-side-menu.qodef-close-side-menu-icon-pack *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-side-menu a.qodef-close-side-menu.qodef-close-side-menu-svg-path > * {
+  vertical-align: middle;
+}
+
+.qodef-side-menu a.qodef-close-side-menu.qodef-close-side-menu-svg-path > *,
+.qodef-side-menu a.qodef-close-side-menu.qodef-close-side-menu-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.qodef-side-menu-slide-from-right.qodef-right-side-menu-opened .qodef-wrapper .qodef-cover {
+  z-index: 3000;
+}
+
+.qodef-side-menu-slide-from-right.qodef-right-side-menu-opened .qodef-side-menu {
+  right: 0;
+  visibility: visible;
+}
+
+.qodef-side-menu-slide-from-right .qodef-wrapper .qodef-cover {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* ==========================================================================
+# Side area style - end
+========================================================================== */
+/* ==========================================================================
+   Side area styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=sidearea-map.css.map */

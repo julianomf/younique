@@ -1,0 +1,917 @@
+/*
+Theme Name: Eiddo
+Theme URI: http://eiddo.select-themes.com
+Description: A Theme for Real Estate Agencies and Realtors
+Author: Select Themes
+Author URI: http://themeforest.net/user/select-themes
+Text Domain: eiddo
+Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-menu, featured-images, flexible-header, post-formats, sticky-post, threaded-comments, translation-ready
+Version: 1.0
+License: GNU General Public License
+License URI: licence/GPL.txt
+
+CSS changes can be made in files in the /css/ folder. This is a placeholder file required by WordPress, so do not delete it.
+
+*/
+
+/* Geral */
+.qodef-team-holder .qodef-team-image img{
+	margin-left:auto;
+	margin-right:auto;
+}
+	#qodef-back-to-top>span{
+		background-color: #632c7f !important;
+		border: 1px solid #632c7f !important;
+	}
+	#submit_comment:hover, .post-password-form input[type=submit]:hover, input.wpcf7-form-control.wpcf7-submit:hover{
+		background-color: #632c7f !important;
+	}
+	.formulario-conte .vc_col-sm-12 .wpcf7-submit:hover, .formulario-em-consultoria .vc_col-sm-12 .wpcf7-submit:hover{
+		background-color: #00bad8 !important;
+	}
+	.formulario-parceria .vc_col-sm-12 .wpcf7-submit:hover{
+		background-color: #632c7f !important;
+	}
+	#submit_comment, .post-password-form input[type=submit], input.wpcf7-form-control.wpcf7-submit, .qodef-btn.qodef-btn-solid{
+		background-color: #00bad8 !important;
+	}
+
+/* Top Header */
+	.qodef-top-bar .widget{
+		font-size:14px !important;
+	}
+	.qodef-vertical-align-containers{
+		padding:0px !important;
+	}
+	.qodef-position-left-inner .textwidget{
+		margin-right:15px;
+	}
+	.area-do-cliente{
+		background-color: #005a6b;
+		padding: 11px;
+		margin-left: 15px;
+		margin-right: -15px;
+	}
+	.area-do-cliente i{
+		margin-right: 4px;
+	}
+	.qodef-top-bar{
+		height:40px !important;
+	}
+
+/* Header */
+	.qodef-page-header{
+		margin-bottom: 0px !important;
+	}
+	.qodef-page-header .qodef-fixed-wrapper.fixed {
+		position: inherit !important;
+	}
+	.qodef-page-header .qodef-vertical-align-containers {
+		padding: 0 7% !important;
+		
+	}
+	.qodef-main-menu>ul>li>a>span.item_outer{
+		position: inherit;
+		display: initial;
+		text-align: -webkit-auto;
+		transform: translateY(0%);
+	}
+
+	#menu-header-nav-menu .qodef-drop-down-start ul li a{
+		color:#FFF !important;
+	}
+	.qodef-logo-wrapper{
+		padding-top:20px;
+	}
+	.qodef-page-header .qodef-fixed-wrapper.fixed .qodef-menu-area{
+		background-color: rgb(240, 240, 240);
+	}
+	.qodef-hide-breadcrumbs-mobile-yes{
+		background-size: cover;
+	}
+	#menu-header-nav-menu{
+		padding-top: 3%;
+	}
+	.qodef-main-menu ul li a{
+		padding: 0 10px;
+		transition: all .3s linear;
+		font-size: 14px;
+		letter-spacing: 0px;
+		height: auto;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+	.qodef-main-menu ul li a:hover{
+		background-color: #00bad8;
+		/*padding: 5px 20px;*/
+		color: #fff !important;
+		box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+		transform: rotate(-5deg) scale(1.1);
+	}
+	.fixed .qodef-main-menu ul li a{
+		color:#333 !important;
+	}
+	.qodef-drop-down>ul>li:hover>.second{
+		margin-top: -50px;
+	}
+	.qodef-blog-holder article .qodef-post-image .qodef-post-info-date{
+		background-color: #00bad8 !important;
+	}
+	aside.qodef-sidebar .widget .qodef-widget-title-holder{
+		background-color: #00bad8 !important;
+	}
+	.sidebar-informacoes, .sidebar-informacoes a{
+		color:#444 !important;
+	}
+	.widget .qodef-contact-link{
+		display:none !important;
+	}
+	.text-link{
+		font-size: 14px;
+	}
+	
+	
+/* "Slider" */
+	.principal-slider{
+		margin-bottom: -310px !important;
+	}
+	.pesquisa-slider{
+		margin-bottom: 85px;
+	}
+	.pesquisa-slider .qodef-search-city-section{
+		width: 40% !important;
+		margin-left: 10%;
+	}
+	.pesquisa-slider .qodef-search-status-section{
+		width: 40% !important;
+	}
+	.pesquisa-slider .qodef-search-type-section{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 510px;
+	}
+	.pesquisa-slider .qodef-search-button-section{
+		margin-left: auto;
+		margin-right: auto;
+		display: block !important;
+		width: 170px;
+	}
+	.pesquisa-slider .qodef-ptl-inner{
+		margin-left: auto;
+		margin-right: auto;
+		width: 580px;
+		display: block;
+	}
+	.pesquisa-slider .qodef-search-city-section select, .busca-younique .qodef-search-status-section select{
+		width: 95%;
+		height: 40px;
+		padding-left: 15px;
+	}
+
+/* Página Principal - Conheça */
+	.p-conheca p{
+		line-height: 40px;
+		margin-top: 25px;
+		text-align: justify;
+		padding-right: 55px;
+		font-size: 17px;
+		color: #444;
+	}
+	.botao-conheca{
+		border: 1px dashed #00bad8;
+		padding: 7px 20px;
+		color: #00bad8;
+		transition: linear .3s all;
+	}
+	.botao-conheca:hover{
+		background-color: #00bad8;
+		color:#FFF;
+	}
+
+/* Página Principal - Conte-nos o que precisa */
+	.formulario-conte{
+		padding: 0px 50px 0px 80px;
+	}
+	.formulario-conte .vc_col-sm-12{
+	    float: left;
+		height: 40px;
+		padding: 0px;
+		margin-top: 10px;
+	}
+	.formulario-conte .vc_col-sm-12 input{
+		background-color: #FFF;
+		height: 40px;
+	}
+	.formulario-conte .vc_col-sm-12 h4{
+		float: left;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		color: #632c7f;
+		font-weight: 500;
+		font-size: 15px;
+		width: 96%;
+		background-color: #e4e4e4;
+		padding-left: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.formulario-conte .vc_col-sm-12 select{
+		height: 40px;
+		padding-top: 10px;
+		border: 1px dashed #632c7f;
+		width: 99.6%;
+	}
+	.formulario-conte .vc_col-sm-12 .wpcf7-submit{
+		background-color: #5b2e84 !important;
+		padding: 10px 30px;
+		box-shadow: 3px 4px 2px 0px rgba(0,0,0,0.75);
+		float: right;
+		font-weight: bold;
+	}
+	.formulario-conte .vc_col-sm-9{
+		float: left;
+		height: 40px;
+		color: #6f6f6f;
+		font-size: 17px;
+		background: #FFF;
+		margin-top: 15px;
+		padding: 5px 0px;
+	}
+	.formulario-conte .vc_col-sm-6{
+	    float: left;
+		height: 40px;
+		padding: 0px;
+		margin-top: 10px;
+	}
+	.formulario-conte .vc_col-sm-6 .your-telefone input{
+		background-color: #FFF;
+		height: 40px;
+		width:95%;
+	}
+	.formulario-conte .vc_col-sm-6 input{
+		background-color: #FFF;
+		height: 40px;
+	}
+	.formulario-conte .vc_col-sm-3{
+		float: left;
+		height: 40px;
+		background-color: #e4e4e4;
+		padding: 10px 15px;
+		margin-top: 15px;
+	}
+	.formulario-conte .vc_col-sm-3 h5{
+		margin:0px;
+		color: #848484;
+	}
+	.conte-nos{
+		padding-right: 5% !important;
+		padding-left: 5% !important;
+	}
+	.conte-nos h4{
+		text-align: right;
+		font-size: 30px;
+		color: #00bad8;
+	}
+	.conte-nos p{
+		color: #444;
+		line-height: 35px;
+		text-align: justify;
+	}
+	.conte-nos .span-conte{
+		color: #444;
+		letter-spacing: 1px;
+	}
+	
+	
+/* Página Principal - Consultoria */	
+	.icon-consultoria-negocios p{
+		text-align: center;
+		color: #FFF;
+		margin-bottom: 60px !important;
+		margin-top: 15px;
+		line-height: 20px;
+		font-weight: bold;
+	}
+	.consultoria-em-negocios .vc_column-inner{
+		padding-right: 20% !important;
+		padding-left: 55px !important;
+	}
+	.consultoria-em-negocios h3{
+		font-weight: bold;
+		color: #5b2e84;
+		font-size: 35px;
+	}
+	.consultoria-em-negocios h5{
+		padding-top: 0px;
+		margin-top: -10px;
+		font-size: 18px;
+		letter-spacing: 1px;
+	}
+	.consultoria-em-negocios p{
+		color: #6f6f6f;
+		text-align: justify;
+		margin-top: -7px;
+		font-size: 15px;
+	}
+	.formulario-em-consultoria{
+		margin-top:20px;
+	}
+	.formulario-em-consultoria .vc_col-sm-12{
+		padding: 0px;
+	}
+	.formulario-em-consultoria .vc_col-sm-12 textarea{
+		height: 130px;
+		background-color: #FFF;
+		margin-top: 15px;
+	}
+	.formulario-em-consultoria .vc_col-sm-12 .wpcf7-submit{
+		background-color: #5b2e84 !important;
+		padding: 10px 30px;
+		box-shadow: 3px 4px 2px 0px rgba(0,0,0,0.75);
+		float: right;
+		font-weight: bold;
+	}
+	.formulario-em-consultoria .vc_col-sm-10{
+		padding: 0px;
+		background-color: #FFF;
+		height: 60px;
+		padding-top: 4px;
+	}
+	.formulario-em-consultoria .vc_col-sm-6{
+		padding: 0px;
+	}
+	.formulario-em-consultoria .vc_col-sm-6 .your-name input{
+		background-color: #FFF;
+		width: 95%;
+	}
+	.formulario-em-consultoria .vc_col-sm-6 input{
+		background-color: #FFF;
+	}
+	.formulario-em-consultoria .vc_col-sm-2{
+	    height: 60px;
+		padding: 0px;
+		background-color: #e4e4e4;
+	}
+	.formulario-em-consultoria .vc_col-sm-2 h5{
+		margin: 0px;
+		font-size: 16px;
+		letter-spacing: 0px;
+		font-weight: 400;
+		color: #848484;
+		padding-top: 18px;
+		padding-left: 10px;
+	}
+
+/* Página Principal - Imóveis */
+	.titulo-imoveis .qodef-st-title{
+		font-size: 12px;
+		text-transform: uppercase;
+		font-family: Raleway;
+		letter-spacing: 10px;
+		font-weight: 500;
+	}
+	.titulo-imoveis .qodef-st-title::before{
+		content: url(/arquivos/2018/06/icone-chave.png);
+		margin-right: -15px;
+	}
+	.titulo-imoveis .qodef-st-text{
+		margin-top: 10px;
+		font-size: 26px;
+		color: #444;
+		font-weight: bold;
+		margin-bottom: 50px;
+	}
+	
+/* Página Principal - Parceria */
+	.linha-parceria{
+		padding:50px 100px;
+	}
+
+	/* Direita */
+	.formulario-parceria{
+		margin-top:20px;
+	}
+	.formulario-parceria .vc_col-sm-12{
+		padding: 0px;
+	}
+	.formulario-parceria .vc_col-sm-12 textarea{
+		height: 130px;
+		background-color: #FFF;
+		margin-top: 15px;
+	}
+	.formulario-parceria .vc_col-sm-12 .wpcf7-submit{
+		background-color: #00bad8;
+		padding: 10px 30px;
+		box-shadow: 3px 4px 2px 0px rgba(0,0,0,0.75);
+		float: right;
+		font-weight: bold;
+	}
+	.formulario-parceria .vc_col-sm-10{
+		padding: 0px;
+		background-color: #FFF;
+		height: 60px;
+		padding-top: 4px;
+	}
+	.formulario-parceria .vc_col-sm-6{
+		padding: 0px;
+	}
+	.formulario-parceria .vc_col-sm-6 .your-name input{
+		background-color: #FFF;
+		width: 95%;
+	}
+	.formulario-parceria .vc_col-sm-6 input{
+		background-color: #FFF;
+	}
+	.formulario-parceria .vc_col-sm-2{
+	    height: 60px;
+		padding: 0px;
+		background-color: #e4e4e4;
+	}
+	.formulario-parceria .vc_col-sm-2 h5{
+		margin: 0px;
+		font-size: 16px;
+		letter-spacing: 0px;
+		font-weight: 400;
+		color: #848484;
+		padding-top: 18px;
+		padding-left: 10px;
+	}
+	.coluna-parcerias{
+
+	}
+	.coluna-parcerias h4{
+		font-size: 35px;
+		font-weight: bold;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+	.coluna-parcerias h6{
+		margin-top: 10px;
+		font-size: 16px;
+		padding-right: 25%;
+		color: #848484;
+	}
+	.coluna-parcerias h5{
+		color: #00bad8;
+		font-weight: bold;
+		font-size: 25px;
+	}
+	.coluna-parcerias h5 span{
+		font-weight: 400;
+	}
+	
+	/* Esquerda */
+	.linha-1{
+	    padding: 0px 50px;
+		padding-top: 100px;
+		margin-bottom: 30px !important;
+	}
+	.linha-1 h3, .linha-2 h3{
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.linha-2{
+	    padding: 0px 50px;
+	}
+	
+/* Página Principal - Equipe */
+	.titulo-equipe .qodef-st-title{
+		color: #00bad8;
+		font-weight: bold;    
+		font-family: Roboto,sans-serif;
+	}
+	.titulo-equipe .qodef-st-title::before{
+		content: url(/arquivos/2018/06/icone-chave.png);
+		margin-right: -15px;
+	}
+	.titulo-equipe .qodef-st-text{
+		margin-top: 5px;
+		color: #444;
+		font-weight: 400;
+		font-family: Roboto,sans-serif;
+		margin-bottom: 35px;
+	}
+	.bloco-equipe{
+		padding: 0px 100px;
+	}
+	.bloco-equipe .qodef-team-inner{
+	    background-color: #FFF;
+		padding: 20px;
+	}
+	.bloco-equipe .qodef-team-info{
+		margin-top: 10px;
+	}
+	.bloco-equipe .qodef-team-name, .bloco-equipe .qodef-team-position{
+		text-align: center;
+	}
+	
+/* Página Principal - Blog e Novidades */	
+	.blog-novidades{
+		padding-left: 150px;
+		padding-right: 150px;
+		padding-bottom: 50px;
+	}
+	.blog-novidades .vc_gitem-col{
+		background-color: #f9f9f9 !important;
+	}
+	.blog-novidades .vc_custom_heading h4{
+		font-size: 15px;
+		font-weight: 500;
+		padding: 0px;
+		margin-top: 5px;
+	}
+	.blog-novidades .vc_custom_heading p{
+		line-height: 20px;
+		color: #757575;
+		text-align: justify;
+		margin-top: -5px;
+	}
+	.blog-novidades .vc_btn3-container a{
+		display:none !important;
+	}
+	
+/* Pagina Principal - Depoimentos */
+	.depoimentos .qodef-testimonial-image{
+		float: none;
+	}
+	.depoimentos .qodef-testimonial-image img{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 15% !important;
+	}
+	.depoimentos .qodef-testimonial-text{
+		padding: 0px 25%;
+		text-align: justify;
+		/*margin-top: -20px;*/
+	}
+	.depoimentos .qodef-testimonials-holder .qodef-testimonials-author-job{
+		color: #00bad8;
+		text-align: center;
+		font-weight: bold;
+		padding-right: 9%;
+	}
+	.depoimentos .qodef-testimonials-holder .qodef-testimonial-author-name{
+		text-align: center;
+		padding-right: 9%;
+		color: #dedede;
+		margin-top: 15px;
+	}
+
+/* Página Parcerios */	
+	.linha-parceiros{
+	    padding: 5% 10%;
+	}
+	.linha-parceiros .vc_col-sm-6{
+		padding-left: 3%;
+	}
+	.linha-parceiros h6{
+	    letter-spacing: 5px;
+		font-size: 12px;
+		color: #757575;
+	}
+	.linha-parceiros h3{
+	    font-weight: bold;
+		color: #00bad8;
+		line-height: 45px;
+		font-size: 50px;
+		/*text-shadow: 5px 5px 3px #fff;*/
+	}
+	.widget form{
+		width: 100%;
+		margin-left: -20px;
+		padding-left: 15px;
+		padding-right: 25px;
+		padding-bottom: 30px;
+		padding-top: 10px;
+		background-color: #FFF;
+		margin-top: -25px;
+	}
+	.widget form input{
+		border: 1px dashed #00bad8 !important;
+		height: 40px;
+	}
+	.widget form textarea{
+		    border: 1px dashed #00bad8 !important;
+	}
+	.widget .qodef-widget-title-holder{
+		background-color: #632c7f;
+	}
+	.single-property aside.qodef-sidebar{
+		margin-bottom: 41px !important;
+	}
+	.linha-parceiros p{
+	    padding-right: 10%;
+		text-align: justify;
+		margin-top: 30px;
+		color: #797979;
+		line-height: 35px;
+	}
+	.linha-formulario-parceiros{
+		padding: 3% 10%;
+	}
+	.linha-formulario-parceiros h3{
+		font-weight: bold;
+		color: #00bad8;
+		line-height: 45px;
+		font-size: 50px;
+		text-shadow: 5px 5px 6px #FFF;
+	}
+	.linha-formulario-parceiros p{
+	    padding-right: 10%;
+		text-align: justify;
+		color: #868686;
+		margin-top: 30px;
+	}
+	
+/* Página Consultoria */	
+	.texto-consultoria h3{
+		text-align: center;
+		padding: 50px 0px;
+		font-size: 32px;
+		color: #5b2e84;
+		letter-spacing: -1px;
+		font-weight: 600;
+	}
+	.texto-consultoria h5{
+		padding: 0px 21%;
+		font-weight: 400;
+		line-height: 45px;
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 60px !important;
+	}
+	.linha-consultoria-icones{
+		padding: 5% 10%;
+	}
+	.linha-consultoria-icones h4{
+		min-height: 100px;	
+	}
+	.linha-consultoria-icones .vc_col-sm-3{
+		background-color: #e6e6e6;
+		margin-right: 15px;
+		min-height: 340px;
+		padding-bottom: 40px;
+		padding-top: 40px;
+		width: 23%;
+	}
+	.linha-consultoria-icones .vc_col-sm-3 ul{
+		list-style-type: none;
+		text-align: center;
+		padding: 0px 10px;
+		color: #6b6b6b;
+	}
+	.linha-consultoria-icones .vc_col-sm-3 ul li{
+		margin-bottom: 20px;
+	}
+	.linha-formulario-consultoria-interna{
+		padding:5% 10%;
+	}
+	.texto-consultoria-interna h3{
+	    color: #FFF;
+		font-weight: bold;
+		font-size: 35px;
+	}
+	.texto-consultoria-interna p{
+		color: #FFF;
+		line-height: 30px;
+		text-align: justify;
+		padding-right: 35px;
+	}
+	.bloco-consultoria-texto{
+		min-height:450px;
+	}
+	.bloco-consultoria-interna{
+		border: 2px dashed #632c7f;
+		padding: 7px 20px;
+		color: #632c7f;
+		font-weight: bold;
+		transition: linear .3s all;
+	}
+	.bloco-consultoria-interna:hover{
+		background-color: #632c7f;
+		color: #FFF
+	}
+	
+/* Single Produto */
+	.title-single-imovel{
+		color: #00bad8;
+		font-weight: bold;
+		font-size: 25px;
+	}
+	.qodef-property-title-section{
+		padding: 30px 90px !important;
+	}
+	.qodef-title-center-right{
+		text-align: right !important;
+		border-left: 0px !important;
+	}
+	.qodef-property-price-info-holder .qodef-property-price{
+		color: #444 !important;
+	}
+	.qodef-title-center-right .qodef-property-price-label{
+		font-size: 18px;
+		margin-right: 5px;
+	}
+	.qodef-title-center-right .qodef-property-price-value{
+	    font-size: 30px;
+		font-weight: bold;
+	}
+
+	/* Breadcrumbs */	
+		.page-template-blog-standard .qodef-title-wrapper, .term-residencial .qodef-title-wrapper, .term-comercial .qodef-title-wrapper, .term-imoveis-no-exterior .qodef-title-wrapper{
+			background-color: #0006;
+		}
+		
+		/* Blog */
+		.page-template-blog-standard .qodef-title-holder.qodef-bg-parallax{
+			background-image: url(/arquivos/2018/06/faixa-blog.jpg) !important;
+			background-size: cover;
+			background-position: center 10% !important;
+			background-attachment: inherit;
+		}
+	
+		/* Categoria - Comercial */
+		.term-comercial .qodef-title-holder{
+			background-image: url(/arquivos/2018/06/faixa-apartamento.jpg) !important;
+			background-size: cover;
+			background-position: center 10% !important;
+			background-attachment: inherit;
+		}
+	
+		/* Categoria - Residencial */
+		.term-residencial .qodef-title-holder{
+			background-image: url(/arquivos/2018/06/faixa-casa.jpg) !important;
+			background-size: cover;
+			background-position: center 10% !important;
+			background-attachment: inherit;
+		}
+		
+		/* Categoria - Cobertura */
+		.term-imoveis-no-exterior .qodef-title-holder{
+			background-image: url(/arquivos/2018/06/faixa-cobertura.jpg) !important;
+			background-size: cover;
+			background-position: center 10% !important;
+			background-attachment: inherit;
+		}
+	
+	
+	
+/* Footer */
+	.qodef-footer-top-holder{
+		background-image: url(/arquivos/2018/06/bg-rodape.png);
+		background-size: cover;
+	}
+	#nav_menu-2{
+		padding-left: 25% !important;
+	}
+	footer .widget form{
+		background-color: transparent;
+		margin-top: 0px;
+	}
+	footer .widget .qodef-widget-title-holder{
+		color: #18bada !important;
+	}
+	.qodef-social-icons-group-widget .qodef-social-icon-widget-holder{
+		font-size:25px;
+	}
+	footer .widget ul li a:hover{
+		padding-left:5px;
+	}
+	.widget{
+		background:transparent !important;
+		padding:0px !important;
+	}
+	.widget a{
+		color:#FFF !important;
+	}
+/* Bottom Footer */
+	.qodef-footer-bottom-holder{
+		background-color: #0687a0 !important;
+	}
+	.qodef-footer-bottom-inner{
+		padding:12px 0px !important;
+	}
+	footer .qodef-footer-bottom-holder .widget{
+		color:#FFF !important;
+		text-align: left;
+	}
+	footer .widget a, footer .widget{
+		color:#FFF !important;
+	}
+	footer .widget ul li a{
+		font-size:14px !important;
+	}
+	
+	.bloco-conheca-younique{
+	    padding: 40px 0px 40px 80px;
+	}
+	
+	
+	/* ÁREA DO CLIENTE */
+	.tabela-area-do-cliente{
+	    margin-bottom: 40px;
+	}
+	.tabela-area-do-cliente thead{
+	
+	}
+	.tabela-area-do-cliente th{
+		color: #632c7f;
+		border-right: 1px solid #aeaeae;
+	}
+	.tabela-area-do-cliente tr, .tabela-area-do-cliente td{
+		border: 1px solid #aeaeae;
+	}
+	.tabela-area-do-cliente a{
+	
+	}
+	
+/* Mobile */
+	/* Header */
+	.qodef-mobile-header .qodef-mobile-header-inner{
+		background-color:#f0f0f0 !important;
+	}
+	.qodef-mobile-header .qodef-mobile-menu-opener.qodef-mobile-menu-opener-icon-pack .qodef-mobile-menu-icon *{
+		color: #444;
+	}
+	.linha-imoveis-younique{
+		padding: 50px 100px;
+	}
+	.qodef-mobile-header .qodef-mobile-nav{
+		    height: auto !important;
+	}
+	@media (min-width: 1500px){
+		.qodef-page-header .qodef-vertical-align-containers {
+			width: 1470px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+		.principal-slider {
+			margin-bottom: -235px !important;
+		}
+	}
+	@media (max-width: 1320px){
+		.formulario-conte .vc_col-sm-9{
+			font-size: 13px;
+		}
+	}
+	@media (max-width: 1281px){
+		.pesquisa-slider{
+		    margin-bottom: 115px;
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.formulario-conte{
+			padding: 0px 0px 0px 0px;
+		}
+		.pesquisa-slider{
+			display: none;
+		}
+		.principal-slider {
+			margin-bottom: 0px !important;
+		}
+		.depoimentos .qodef-testimonial-image img{
+			width: 50% !important;
+		}
+		.depoimentos .qodef-testimonial-text{
+			padding: 0px 0%;
+		}
+		.bloco-conheca-younique{
+			padding: 40px 0px 40px 40px;
+		}
+		.formulario-conte .vc_col-sm-6 .your-telefone input, .formulario-conte .vc_col-sm-6, .formulario-conte .vc_col-sm-3, .formulario-conte .vc_col-sm-9, .formulario-conte .vc_col-sm-12, .formulario-em-consultoria .vc_col-sm-10{
+			width:100%;
+			height: auto;
+		}
+		.consultoria-em-negocios .vc_column-inner {
+			padding-right: 5% !important;
+			padding-left: 5% !important;
+		}
+		.linha-imoveis-younique{
+			padding: 50px 10px;
+		}
+		.linha-parceria{
+			padding: 50px 10px;
+		}
+		.bloco-equipe{
+			padding: 0px 50px;
+		}
+		.blog-novidades{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.slider-principal{
+		    padding-top: 70px;
+		}
+		.qodef-footer-bottom-holder .qodef-grid-col-6 p{
+			text-align:center !important;
+		}
+		#nav_menu-2 {
+			padding-left: 0% !important;
+		}
+	}
+	

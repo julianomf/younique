@@ -1,0 +1,273 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+.qodef-comment-form-rating label {
+  vertical-align: middle;
+  color: #1b1b1b;
+}
+
+#respond .qodef-comment-form-rating label {
+  margin: 0 7px 0 0;
+}
+
+.qodef-comment-form-rating .qodef-comment-rating-box {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qodef-comment-form-rating .qodef-comment-rating-box .qodef-star-rating {
+  position: relative;
+  display: inline-block;
+  font-family: 'FontAwesome';
+  color: #bebebe;
+  font-size: 11px;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.qodef-comment-form-rating .qodef-comment-rating-box .qodef-star-rating.active {
+  color: #078169;
+}
+
+.qodef-comment-form-rating .qodef-comment-rating-box .qodef-star-rating:before {
+  content: '\f005';
+}
+
+.qodef-reviews-per-criteria .qodef-item-reviews-average-rating {
+  color: #078169;
+  font-size: 60px;
+  line-height: 1em;
+  font-weight: 700;
+}
+
+.qodef-reviews-per-criteria .qodef-item-reviews-verbal-description {
+  vertical-align: middle;
+  margin: 2px 0 0;
+}
+
+.qodef-reviews-per-criteria .qodef-item-reviews-rating-icon {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.qodef-reviews-per-criteria .qodef-item-reviews-display-right {
+  vertical-align: middle;
+  padding-left: 200px;
+  box-sizing: border-box;
+}
+
+.qodef-reviews-per-criteria .qodef-item-reviews-display-right .qodef-item-reviews-display-bar {
+  line-height: 28px;
+}
+
+.qodef-reviews-per-criteria .qodef-item-reviews-display-right .qodef-item-reviews-display-bar .qodef-item-reviews-display-bar-inner {
+  padding: 6px 0;
+}
+
+.qodef-reviews-per-mark .qodef-reviews-number-wrapper {
+  padding-top: 23%;
+  padding-left: 15%;
+  display: table;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.qodef-reviews-per-mark .qodef-reviews-number {
+  font-size: 72px;
+  color: #ffd740;
+  font-weight: 700;
+  line-height: 1em;
+  margin-right: 22px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: -6px;
+}
+
+.qodef-reviews-per-mark .qodef-stars-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.qodef-reviews-per-mark .qodef-stars-wrapper .qodef-stars {
+  display: block;
+}
+
+.qodef-reviews-per-mark .qodef-stars-wrapper .qodef-stars i {
+  color: #ffd740;
+}
+
+.qodef-reviews-per-mark .qodef-reviews-count {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.qodef-reviews-per-mark .qodef-rating-percentage-wrapper {
+  padding: 29px 50px 40px;
+  background-color: #fafafa;
+  border-left: 1px solid #e5e5e5;
+}
+
+.qodef-reviews-simple .qodef-reviews-number-wrapper .qodef-reviews-summary {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qodef-reviews-simple .qodef-reviews-number-wrapper .qodef-stars-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 0 15px;
+}
+
+.qodef-reviews-simple .qodef-reviews-number-wrapper .qodef-stars-wrapper-inner {
+  display: block;
+}
+
+.qodef-reviews-stars .qodef-reviews-summary {
+  display: inline-block;
+  margin: 0 7px 0 0;
+  vertical-align: middle;
+  float: none;
+}
+
+.qodef-reviews-stars .qodef-stars {
+  font-size: 11px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.qodef-reviews-stars .qodef-stars .qodef-stars-items {
+  color: #078169;
+}
+
+.qodef-comment-list .qodef-comment-text .qodef-comment-name {
+  float: none;
+  display: inline-block;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.qodef-comment-list .qodef-review-rating {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qodef-comment-list .qodef-rating-value {
+  font-size: 11px;
+  color: #078169;
+}
+
+.qodef-top-reviews-carousel-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-top-reviews-carousel-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-top-reviews-carousel-title {
+  margin: 0 0 22px;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-top-reviews-carousel {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-top-reviews-carousel-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-top-reviews-item-title {
+  margin: 0 0 2px;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-tour-reviews-criteria-holder {
+  display: block;
+  width: 100%;
+  float: none;
+  margin: 0;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-top-reviews-item-content {
+  margin: 20px 0 0;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-top-reviews-item-content p {
+  margin: 0;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-top-reviews-item-author-info {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 32px 0 0;
+  padding: 0 100px 0 0;
+  box-sizing: border-box;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-top-reviews-item-author-avatar {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 21px 0 0;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-top-reviews-item-author-avatar img {
+  display: block;
+  border-radius: 50%;
+}
+
+.qodef-top-reviews-carousel-holder .qodef-top-reviews-item-author-name {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.qodef-top-reviews-carousel-holder .owl-nav {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  width: 60px;
+}
+
+.qodef-top-reviews-carousel-holder .owl-nav .owl-prev {
+  left: 0;
+}
+
+.qodef-top-reviews-carousel-holder .owl-nav .owl-next {
+  right: 0;
+}
+
+/*# sourceMappingURL=../../../../plugins/select-core/assets/css/modules-map.css.map */

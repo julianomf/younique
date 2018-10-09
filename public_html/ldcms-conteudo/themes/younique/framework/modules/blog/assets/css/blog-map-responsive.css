@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Blog responsive styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+@media only screen and (max-width: 768px) {
+  .qodef-related-posts-holder .qodef-related-post {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-author-description .qodef-author-description-content {
+    padding: 0;
+  }
+  .qodef-author-description .qodef-author-description-image {
+    display: block;
+    width: 100%;
+  }
+  .qodef-author-description .qodef-author-description-text-holder {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .qodef-related-posts-holder .qodef-related-post {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-blog-holder.qodef-blog-single article .qodef-post-info-bottom .qodef-post-info-bottom-left,
+  .qodef-blog-holder.qodef-blog-single article .qodef-post-info-bottom .qodef-post-info-bottom-right {
+    width: 100%;
+    float: none;
+  }
+  .qodef-blog-holder.qodef-blog-single article .qodef-post-info-bottom .qodef-post-info-bottom-right {
+    text-align: inherit;
+    margin: 10px 0 0;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-four-columns .qodef-bl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-four-columns .qodef-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-five-columns .qodef-bl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-five-columns .qodef-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-three-columns .qodef-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-three-columns .qodef-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-four-columns .qodef-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-four-columns .qodef-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-five-columns .qodef-bl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-five-columns .qodef-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-blog-list-holder.qodef-bl-standard .qodef-bl-item {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-map-responsive.css.map */

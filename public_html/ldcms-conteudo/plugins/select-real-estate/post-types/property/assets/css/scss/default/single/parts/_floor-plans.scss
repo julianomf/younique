@@ -1,0 +1,40 @@
+/* Floor plans section start */
+.qodef-property-floor-plans {
+    .qodef-accordion-holder {
+        .qodef-accordion-title-content {
+            @include qodefTableLayout();
+        }
+        .qodef-accordion-title-value {
+            @include qodefTableCellLayout();
+            width: 40%;
+            font-weight: 500;
+        }
+        .qodef-accordion-title-info {
+            @include qodefTableCellLayout();
+            width: 60%;
+            text-align: right;
+            font-family: $default-text-font;
+        }
+
+        .qodef-accordion-title-item {
+            padding: 0 0 0 23px;
+
+            .qodef-accordion-size-label,
+            .qodef-accordion-room-label,
+            .qodef-accordion-bath-label {
+                font-weight: 300;
+            }
+    
+            .qodef-accordion-size-value,
+            .qodef-accordion-room-value,
+            .qodef-accordion-bath-value {
+                font-weight: 400;
+            }
+        }
+
+        .qodef-accordion-image {
+            margin: 30px 0 0;
+        }
+    }
+}
+/* Floor plans section end */

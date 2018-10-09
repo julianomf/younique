@@ -1,0 +1,132 @@
+.qodef-package-list-holder {
+    .qodef-package-item {
+        display: inline-block;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .qodef-package-item-inner {
+        position: relative;
+        box-sizing: border-box;
+        border-radius: 2px;
+        background-color: #fff;
+    }
+    
+    &.qodef-with-border {
+        .qodef-package-content-holder {
+            border: 1px solid $default-border-color;
+        }
+    }
+
+    .qodef-package-title-holder {
+        position: relative;
+        height: 100%;
+        background-color: #000;
+    }
+
+    .qodef-package-title {
+        color: #fff;
+        padding: 31px 0 25px;
+        margin: 0;
+    }
+
+    .qodef-package-price {
+        padding: 78px 0 25px;
+        color: $first-main-color;
+        font-size: 55px;
+        font-family: $default-heading-font;
+        font-weight: 300;
+        line-height: 1em;
+        vertical-align: middle;
+        position: relative;
+    }
+    
+    .qodef-package-price-dash {
+        line-height: 0;
+        .qodef-dash {
+            display: inline-block;
+            line-height: 0;
+            width: 37px;
+            height: 1px;
+            background-color: #000;
+        }
+    }
+
+    .qodef-package-content {
+        position: relative;
+        text-align: center;
+        padding: 26px 27px 15px;
+        font-weight: 400;
+
+        > div {
+            padding: 1px 0;
+        }
+    }
+
+    .qodef-package-action {
+        position: relative;
+        padding: 0 30px 86px;
+
+        .qodef-btn {
+            padding: 10px 8px 6px;
+            width: 100%
+        }
+    }
+
+    .qodef-package-badge {
+        position: absolute;
+        @include qodefTransform(rotate(90deg));
+        top: 17px;
+        left: -19px;
+        background-color: #ff212b;
+        color: #fff;
+        font-size: 12px;
+        width: 64px;
+        text-align: center;
+        padding: 4px 0 3px;
+    }
+
+    /***** List Columns Style - begin *****/
+
+    &:not(.qodef-pckgl-one-column) {
+
+        li {
+            float: left;
+        }
+    }
+
+    $gallery_columns_number: ('two', 'three', 'four', 'five', 'six');
+
+    @for $i from 0 to length($gallery_columns_number) {
+        &.qodef-pckgl-#{nth($gallery_columns_number,$i+1)}-columns {
+
+            li {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) {
+                // set different break point for four, five and six columns
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    li {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+                    li {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** List Columns Style - end *****/
+}

@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+
+.qodef-testimonials-holder {
+    @include qodefRelativeHolderLayout();
+
+    .qodef-testimonial-content,
+    .qodef-testimonial-text-holder {
+        @include qodefRelativeHolderLayout();
+    }
+
+    $testimonials_columns_number: ('two', 'three', 'four', 'five', 'six');
+
+    @for $i from 0 to length($testimonials_columns_number) {
+        &.qodef-testimonials-#{nth($testimonials_columns_number,$i+1)}-columns {
+
+            .qodef-pl-item {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) {
+                // set different break point for four, five and six columns
+                @media only screen and (min-width: $laptop-landscape-medium-plus-pixel) {
+
+                    .qodef-pl-item {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $ipad-portrait-plus-pixel) {
+
+                    .qodef-pl-item {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    &.qodef-huge-space {
+        .qodef-outer-space .qodef-item-space {
+            margin-bottom: 46px;
+        }
+    }
+
+    .qodef-testimonials.qodef-owl-slider {
+        padding: 0 60px;
+        box-sizing: border-box;
+        .qodef-pl-item {
+            width: 100% !important;
+            float: none !important;
+        }
+    }
+
+    .qodef-testimonial-image {
+        float: left;
+
+        img {
+            width: auto !important;
+            border-radius: 5em;
+        }
+    }
+
+    .qodef-pl-item {
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .qodef-testimonial-author-holder {
+        padding-left: 94px;
+    }
+
+    .qodef-testimonial-author-name {
+        margin: 0;
+        padding-top: 6px;
+    }
+
+    .qodef-testimonials-author-job {
+        margin: 7px 0 0;
+    }
+
+    .qodef-testimonial-text {
+        margin: 9px 0 10px;
+    }
+}
+
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */

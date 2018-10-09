@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Footer styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Footer style - begin
+   ========================================================================== */
+.qodef-page-footer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.qodef-page-footer .qodef-footer-top-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #111111;
+  box-sizing: border-box;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-alignment-center {
+  text-align: center;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-alignment-left {
+  text-align: left;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-alignment-right {
+  text-align: right;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-inner {
+  box-sizing: border-box;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-inner.qodef-grid {
+  padding: 90px 0 95px;
+}
+
+.qodef-page-footer .qodef-footer-top-holder .qodef-footer-top-inner.qodef-full-width {
+  padding: 90px 40px 95px;
+}
+
+.qodef-page-footer .qodef-footer-bottom-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #111111;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.qodef-page-footer .qodef-footer-bottom-holder .qodef-footer-bottom-inner {
+  box-sizing: border-box;
+}
+
+.qodef-page-footer .qodef-footer-bottom-holder .qodef-footer-bottom-inner.qodef-grid {
+  padding: 19px 0;
+}
+
+.qodef-page-footer .qodef-footer-bottom-holder .qodef-footer-bottom-inner.qodef-full-width {
+  padding: 19px 40px;
+}
+
+.qodef-page-footer .qodef-column-content > div:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Footer style - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=footer-map.css.map */

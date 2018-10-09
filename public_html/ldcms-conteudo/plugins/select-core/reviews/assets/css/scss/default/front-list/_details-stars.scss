@@ -1,0 +1,16 @@
+.qodef-reviews-stars {
+	.qodef-reviews-summary {
+		display: inline-block;
+		margin: 0 7px 0 0;
+		vertical-align: middle;
+		float: none;
+	}
+	.qodef-stars {
+		font-size: 11px;
+		vertical-align: middle;
+		display: inline-block;
+		.qodef-stars-items {
+			color: $first-main-color;
+		}
+	}
+}

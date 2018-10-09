@@ -1,0 +1,44 @@
+.qodef-property-list-holder {
+    .qodef-property-list-filter-part {
+        .qodef-filter-type-holder {
+            .qodef-property-type-list-holder {
+                .qodef-ptl-item {
+                    border-left: 1px solid $default-border-color;
+                    margin: 0;
+                    padding: 0 12px;
+                    text-transform: capitalize;
+
+                    &:first-child {
+                        border-left: 0;
+                        padding-left: 0;
+                    }
+
+                    .qodef-ptl-item-image {
+                        @include qodefTransition(transform 0.15s ease-out);
+                        @include qodefTransform(translateY(0));
+                    }
+                    &.active {
+                        .qodef-ptl-item-image {
+                            @include qodefTransform(translateY(-3px));
+                        }
+                    }
+                }
+                .qodef-ptl-item-title {
+                    font-size: 13px;
+                    letter-spacing: 0;
+                    color: #5b5b5a;
+                }
+                .qodef-taxonomy-icon {
+                    color: $first-main-color;
+                }
+            }
+        }
+    }
+    &.qodef-pl-status-set {
+        .qodef-property-list-filter-part {
+            .qodef-section-type {
+                width: 100%;
+            }
+        }
+    }
+}

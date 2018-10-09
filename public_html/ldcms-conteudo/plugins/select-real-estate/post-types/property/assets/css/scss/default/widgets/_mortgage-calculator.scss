@@ -1,0 +1,42 @@
+.widget {
+    &.qodef-mortgage-calculator-widget {
+        .qodef-widget-title-holder {
+            display: block;
+            border-bottom: 1px solid $default-border-color;
+            padding: 18px 14px 11px;
+        }
+
+        .qodef-mortgage-calculator-holder {
+            padding: 0;
+        }
+        
+        .qodef-mc-field-holder {
+            label {
+                font-size: 13px;
+                font-weight: 500;
+                font-family: $default-heading-font;
+            }
+        }
+
+        .qodef-btn {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+            margin: 5px 0 0;
+        }
+
+        input[type=text] {
+            width: 100%;
+            margin: 4px 0 11px;
+            padding: 11px 13px 9px;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: $default-heading-font;
+        }
+
+        .qodef-mc-result-holder {
+            margin-top: 10px;
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Process shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-medium {
+    .qodef-process-holder.qodef-process-horizontal .qodef-process-item-holder.qodef-pi-highlighted {
+        margin-top: -30px;
+
+        .qodef-pi {
+            width: 220px;
+            height: 220px;
+        }
+
+        .qodef-pi-content-holder {
+            margin-top: 48px;
+        }
+    
+        .qodef-pi-holder .qodef-pi:before,
+        .qodef-pi-holder .qodef-pi:after {
+            margin-top: 9px;
+        }
+    }
+}
+
+@include laptop-landscape {
+
+    .qodef-process-holder {
+
+        .qodef-pi-image-holder:before {
+            display: none;
+        }
+
+        .qodef-pi-holder-inner {
+            width: 100%;
+        }
+
+        &.qodef-process-holder-items-four {
+            .qodef-process-item-holder {
+                width: 50%;
+                margin-bottom: 60px;
+            }
+        }
+
+        &.qodef-process-horizontal .qodef-process-item-holder:nth-child(2n) .qodef-pi-holder .qodef-pi:after {
+            display: none;
+        }
+
+        &.qodef-process-horizontal.qodef-process-holder-items-three .qodef-process-item-holder .qodef-pi-holder .qodef-pi:after {
+            display: none;
+        }
+    }
+}
+
+@include ipad-portrait {
+    .qodef-process-holder.qodef-process-horizontal {
+        &.qodef-process-holder-items-three, &.qodef-process-holder-items-four {
+            .qodef-process-item-holder {
+                width: 100%;
+                margin-bottom: 30px;
+    
+                .qodef-pi-holder .qodef-pi:before,
+                .qodef-pi-holder .qodef-pi:after {
+                    display: none;
+                }
+            }
+        }
+
+        .qodef-process-item-holder.qodef-pi-highlighted {
+            margin-top: 0;
+        }
+
+        .qodef-pi-holder:after {
+            display: none;
+        }
+
+    }
+}
+
+@include phone-portrait {
+    .qodef-process-holder.qodef-process-vertical {
+        .qodef-process-item-holder {
+            margin-bottom: 36px;
+        }
+
+        .qodef-pi-holder {
+            float: none;
+
+            .qodef-pi {
+                margin: 0 auto 26px auto;
+            }
+        }
+
+        .qodef-pi-content-holder {
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        &.appeared .qodef-process-item-holder:before {
+            display: none;
+        }
+    }
+}
+
+/* ==========================================================================
+   Process shortcode responsive style - end
+   ========================================================================== */

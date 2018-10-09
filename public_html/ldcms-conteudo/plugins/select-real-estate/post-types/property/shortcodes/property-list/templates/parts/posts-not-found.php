@@ -1,0 +1,1 @@
+<p class="qodef-pl-not-found"><?php esc_html_e( 'No properties found.', 'select-real-estate' ); ?></p>

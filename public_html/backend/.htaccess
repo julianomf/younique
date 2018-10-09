@@ -1,0 +1,28 @@
+SetEnvIf Request_URI ^/backend/admin-ajax.php* noauth=1
+AuthType Basic
+AuthName "Area Administrativa Logica Digital"
+AuthUserFile /home/youniqueimobiliaria/public_html/backend/.htpasswd
+Order Deny,Allow
+Satisfy any
+Deny from all
+Require valid-user
+Allow from env=noauth
+# FILTER REQUEST METHODS
+RewriteCond %{REQUEST_METHOD} ^(TRACE|DELETE|TRACK) [NC]
+RewriteRule ^(.*)$ - [F,L]
+
+# QUERY STRING EXPLOITS 
+RewriteCond %{QUERY_STRING} \.\.\/ [NC,OR] 
+RewriteCond %{QUERY_STRING} boot\.ini [NC,OR] 
+RewriteCond %{QUERY_STRING} tag\= [NC,OR] 
+RewriteCond %{QUERY_STRING} ftp\:  [NC,OR] 
+RewriteCond %{QUERY_STRING} http\:  [NC,OR] 
+RewriteCond %{QUERY_STRING} https\:  [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR] 
+RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|%3D) [NC,OR]
+RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(\[|\]|\(|\)|<|>||"|;|\?|\*).* [NC,OR] 
+RewriteCond %{QUERY_STRING} ^.*(&#x22;|&#x27;|&#x3C;|&#x3E;|&#x5C;|&#x7B;|&#x7C;).* [NC,OR] 
+RewriteCond %{QUERY_STRING} ^.*(%0|%A|%B|%C|%D|%E|%F|127\.0).* [NC,OR] 
+RewriteCond %{QUERY_STRING} ^.*(globals|encode|localhost|loopback).* [NC,OR] 
+RewriteCond %{QUERY_STRING} ^.*(request|select|insert|union|declare|drop).* [NC]

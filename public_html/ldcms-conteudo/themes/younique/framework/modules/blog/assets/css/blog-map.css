@@ -1,0 +1,1765 @@
+/* ==========================================================================
+   Blog styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Blog Common style - begin
+   ========================================================================== */
+.qodef-blog-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 60px;
+  clear: both;
+  background: #fff;
+  padding: 30px 30px 20px 30px;
+  box-sizing: border-box;
+}
+
+.qodef-blog-holder article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.qodef-blog-holder article.sticky .qodef-post-title a {
+  color: #078169;
+}
+
+.qodef-blog-holder article .qodef-post-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-holder article .qodef-post-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.qodef-blog-holder article .qodef-post-image img {
+  display: block;
+}
+
+.qodef-blog-holder article .qodef-post-image .qodef-post-info-date {
+  display: inline-block;
+  height: 47px;
+  line-height: 47px;
+  padding: 0 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.qodef-blog-holder article .qodef-post-image .qodef-post-info-date a {
+  color: inherit;
+}
+
+.qodef-blog-holder article .qodef-post-image-background {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.qodef-blog-holder article .qodef-post-image-background a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.qodef-blog-holder article .qodef-post-image-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  line-height: 1;
+  color: #fff;
+}
+
+.qodef-blog-holder article .qodef-post-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.qodef-blog-holder article .qodef-post-title {
+  margin: 0;
+}
+
+.qodef-blog-holder article .qodef-post-excerpt-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 9px 0 0;
+}
+
+.qodef-blog-holder article .qodef-post-excerpt-holder p {
+  margin: 0;
+}
+
+.qodef-blog-holder article .qodef-post-excerpt:after {
+  content: '...';
+}
+
+.qodef-blog-holder article .qodef-post-read-more-button {
+  margin-top: 12px;
+}
+
+.qodef-blog-holder article .qodef-more-link-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 15px 0 0;
+}
+
+.qodef-blog-holder article .qodef-post-info {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-holder article .qodef-post-info > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: currentColor;
+}
+
+.qodef-blog-holder article .qodef-post-info > * a {
+  color: inherit;
+}
+
+.qodef-blog-holder article .qodef-post-info-top {
+  margin-bottom: 2px;
+}
+
+.qodef-blog-holder article .qodef-post-info-top > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 14px 0 0;
+  color: #a3a3a3;
+  font-size: 11px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.qodef-blog-holder article .qodef-post-info-top > div:after {
+  content: '|';
+  position: absolute;
+  top: 0;
+  right: -2px;
+}
+
+.qodef-blog-holder article .qodef-post-info-top > div:last-child {
+  padding: 0;
+}
+
+.qodef-blog-holder article .qodef-post-info-top > div:last-child:after {
+  content: '';
+}
+
+.qodef-blog-holder article .qodef-post-info-top > div a {
+  color: inherit;
+}
+
+.qodef-blog-holder article .qodef-post-info-top > div a:hover {
+  color: #078169;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom {
+  margin-top: 19px;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left,
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 769px) {
+  .qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left,
+  .qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right {
+    width: 50%;
+  }
+  .qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left {
+    float: left;
+  }
+  .qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right {
+    text-align: right;
+    float: right;
+  }
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left .qodef-tags-holder .qodef-tags a {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #000;
+  box-sizing: border-box;
+  padding: 7px 11px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-left .qodef-tags-holder .qodef-tags a:last-child {
+  margin-right: 0;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 13px 0 0;
+  color: #000;
+  font-size: 13px;
+  letter-spacing: .025em;
+  font-family: "Roboto", sans-serif;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div.qodef-blog-share {
+  margin-left: 7px;
+  border-left: 1px solid #e1e1e1;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div.qodef-blog-share .qodef-social-share-holder {
+  padding-left: 24px;
+  vertical-align: middle;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div.qodef-blog-share .qodef-social-share-holder ul {
+  vertical-align: middle;
+  line-height: 0;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div.qodef-post-info-author {
+  color: #5b5a5a;
+  font-weight: 400;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div.qodef-blog-like .qodef-like {
+  padding-left: 2px;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div.qodef-blog-like .qodef-like span {
+  padding-left: 4px;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div:last-child {
+  padding: 0;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div a {
+  color: inherit;
+}
+
+.qodef-blog-holder article .qodef-post-info-bottom .qodef-post-info-bottom-right > div a:hover {
+  color: #078169;
+}
+
+.qodef-blog-holder article.format-link .qodef-post-content {
+  background-position: center;
+  background-size: cover;
+}
+
+.qodef-blog-holder article.format-link .qodef-post-text {
+  padding: 71px 57px 76px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-blog-holder article.format-link .qodef-post-text {
+    padding: 82px 21px 41px;
+  }
+}
+
+.qodef-blog-holder article.format-link .qodef-post-text-main {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+.qodef-blog-holder article.format-link .qodef-post-title {
+  color: #fff;
+}
+
+.qodef-blog-holder article.format-link .qodef-post-mark {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  background-color: #078169;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.qodef-blog-holder article.format-link .qodef-post-info-date {
+  display: inline-block;
+  height: 47px;
+  line-height: 47px;
+  padding: 0 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.qodef-blog-holder article.format-link .qodef-post-info-date a {
+  color: inherit;
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-content {
+  background-position: center;
+  background-size: cover;
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-text {
+  padding: 71px 57px 48px 57px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 680px) {
+  .qodef-blog-holder article.format-quote .qodef-post-text {
+    padding: 82px 21px 41px;
+  }
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-text-main {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-title {
+  color: #fff;
+}
+
+.qodef-blog-holder article.format-quote .qodef-quote-author {
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 0.025em;
+  margin-top: 5px;
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-mark {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  background-color: #078169;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-info-date {
+  display: inline-block;
+  height: 47px;
+  line-height: 47px;
+  padding: 0 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.qodef-blog-holder article.format-quote .qodef-post-info-date a {
+  color: inherit;
+}
+
+.qodef-blog-holder article.format-gallery .qodef-post-image {
+  width: 100%;
+}
+
+.qodef-blog-holder article.format-gallery .owl-carousel .owl-item {
+  z-index: 2;
+}
+
+.qodef-blog-holder article.format-gallery .owl-carousel .owl-item.active {
+  z-index: 3;
+}
+
+.qodef-blog-holder article.format-audio.has-post-thumbnail .qodef-post-heading {
+  position: relative;
+}
+
+.qodef-blog-holder article.format-audio.has-post-thumbnail .qodef-blog-audio-holder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qodef-blog-holder article.format-audio .qodef-post-image {
+  width: 100%;
+  max-width: inherit;
+}
+
+.qodef-blog-holder article.format-audio .qodef-post-image img {
+  width: 100%;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container, .qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-embed, .qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-embed body, .qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls {
+  background: none;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container {
+  background-color: #000;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls {
+  height: 48px !important;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls {
+  padding: 0 10px 0 4px;
+  box-sizing: border-box;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button {
+  width: 39px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button {
+  width: 30px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button {
+  height: 48px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button button {
+  position: relative;
+  height: 100%;
+  background: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-play button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-play button {
+  width: 39px;
+  background-image: url("../img/audio/play.png");
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-pause button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-pause button {
+  width: 39px;
+  background-image: url("../img/audio/pause.png");
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-stop button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-stop button {
+  width: 39px;
+  background-image: url("../img/audio/stop.png");
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-mute button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-mute button {
+  width: 30px;
+  background-image: url("../img/audio/sound.png");
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-playpause-button.mejs-unmute button,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-volume-button.mejs-unmute button {
+  width: 30px;
+  background-image: url("../img/audio/mute.png");
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time {
+  height: 100%;
+  padding: 0;
+  font-family: inherit;
+  font-size: 11px;
+  color: #fff;
+  line-height: 46px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail {
+  height: 100%;
+  padding: 0;
+  font-family: inherit;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total {
+  height: 2px;
+  margin: 23px 0;
+  background: none;
+  background-color: #fff;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-current {
+  height: 5px;
+  background-color: #078169;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-buffering,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-hovered {
+  height: 2px;
+  z-index: 9999;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-hovered {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float {
+  top: -16px;
+  border: 0;
+  color: #fff;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-handle-content {
+  display: none;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float-corner {
+  top: 11px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-loaded,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > .mejs-time-rail .mejs-time-total .mejs-time-float {
+  background: none;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider {
+  height: 48px;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  height: 2px;
+  background: none;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+  top: 23px;
+  background-color: #fff;
+}
+
+.qodef-blog-holder article.format-audio .qodef-blog-audio-holder .mejs-container .mejs-controls > a.mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+  background-color: #078169;
+}
+
+.qodef-blog-holder article.format-video .qodef-self-hosted-video {
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   Blog Common style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog pagination standard style - begin
+   ========================================================================== */
+.qodef-blog-pagination-wp {
+  display: none;
+}
+
+.qodef-blog-pagination {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 45px 0 0;
+  clear: both;
+}
+
+.qodef-blog-pagination ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.qodef-blog-pagination ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 6px;
+}
+
+.qodef-blog-pagination ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.qodef-blog-pagination ul li a.qodef-pag-active {
+  color: #078169;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev, .qodef-blog-pagination ul li.qodef-pag-next, .qodef-blog-pagination ul li.qodef-pag-first, .qodef-blog-pagination ul li.qodef-pag-last {
+  top: -1px;
+  margin: 0;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev a, .qodef-blog-pagination ul li.qodef-pag-next a, .qodef-blog-pagination ul li.qodef-pag-first a, .qodef-blog-pagination ul li.qodef-pag-last a {
+  font-size: 22px;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev a span, .qodef-blog-pagination ul li.qodef-pag-next a span, .qodef-blog-pagination ul li.qodef-pag-first a span, .qodef-blog-pagination ul li.qodef-pag-last a span {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev a span:before, .qodef-blog-pagination ul li.qodef-pag-next a span:before, .qodef-blog-pagination ul li.qodef-pag-first a span:before, .qodef-blog-pagination ul li.qodef-pag-last a span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-next {
+  margin-left: 10px;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-next:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 1px;
+  height: 27px;
+  background-color: #e1e1e1;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-next a {
+  padding-left: 12px;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev {
+  margin-right: 10px;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  width: 1px;
+  height: 27px;
+  background-color: #e1e1e1;
+}
+
+.qodef-blog-pagination ul li.qodef-pag-prev a {
+  padding-right: 12px;
+}
+
+/* ==========================================================================
+   Blog pagination standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode pagination standard style - begin
+   ========================================================================== */
+.qodef-blog-list-holder.qodef-bl-pag-standard-shortcodes .qodef-blog-list {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.qodef-blog-list-holder.qodef-bl-pag-standard-shortcodes.qodef-bl-pag-standard-shortcodes-animate .qodef-blog-list {
+  opacity: 0;
+}
+
+.qodef-bl-standard-pagination {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+  clear: both;
+}
+
+.qodef-bl-standard-pagination ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.qodef-bl-standard-pagination ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px;
+  padding: 0;
+}
+
+.qodef-bl-standard-pagination ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-bl-pag-active a {
+  color: #078169;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-bl-pag-prev, .qodef-bl-standard-pagination ul li.qodef-bl-pag-next {
+  position: absolute;
+  top: 0;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-bl-pag-prev a, .qodef-bl-standard-pagination ul li.qodef-bl-pag-next a {
+  font-size: 30px;
+  -webkit-transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  transition: color 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-bl-pag-prev a span, .qodef-bl-standard-pagination ul li.qodef-bl-pag-next a span {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-bl-pag-prev a span:before, .qodef-bl-standard-pagination ul li.qodef-bl-pag-next a span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-bl-pag-prev {
+  left: 0;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-bl-pag-prev a {
+  opacity: 0;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-bl-pag-next {
+  right: 0;
+}
+
+.qodef-bl-standard-pagination ul li.qodef-bl-pag-next a {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Blog List shortcode pagination standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog pagination load more style - begin
+   ========================================================================== */
+.qodef-blog-pag-load-more {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 40px 0 30px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Blog pagination load more style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog pagination loading element style - begin
+   ========================================================================== */
+.qodef-blog-pag-loading {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 40px 0 20px;
+  color: #000;
+  text-align: center;
+}
+
+.qodef-blog-pag-loading.qodef-standard-pag-trigger {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.qodef-blog-pag-loading.qodef-showing {
+  display: block;
+}
+
+.qodef-blog-pag-loading > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-animation: bl-pag-bouncedelay 1.4s infinite ease-in-out both;
+  -moz-animation: bl-pag-bouncedelay 1.4s infinite ease-in-out both;
+  animation: bl-pag-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.qodef-blog-pag-loading .qodef-blog-pag-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.qodef-blog-pag-loading .qodef-blog-pag-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bl-pag-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes bl-pag-bouncedelay {
+  0%, 80%, 100% {
+    -moz-transform: scale(0);
+  }
+  40% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes bl-pag-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Blog pagination loading element style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List - Standard style - begin
+   ========================================================================== */
+.qodef-blog-holder.qodef-blog-standard article {
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.qodef-blog-holder.qodef-blog-standard article.qodef-post-has-media .qodef-post-heading {
+  margin-bottom: 30px;
+}
+
+.qodef-blog-holder.qodef-blog-standard article.format-link, .qodef-blog-holder.qodef-blog-standard article.format-quote {
+  margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   Blog List - Standard style - end
+   ========================================================================== */
+/* Single author box styles - begin
+	====================================================================== */
+.qodef-author-description {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0 0 37px;
+  text-align: left;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.qodef-author-description .qodef-author-description-inner {
+  min-height: 178px;
+  clear: both;
+}
+
+.qodef-author-description .qodef-author-description-content {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.qodef-author-description .qodef-author-description-image {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  width: 178px;
+  vertical-align: middle;
+}
+
+.qodef-author-description .qodef-author-description-image img {
+  display: block;
+}
+
+.qodef-author-description .qodef-author-description-text-holder {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  width: calc(100% - 178px);
+  vertical-align: middle;
+  padding-left: 38px;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-name {
+  margin: 0;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-name a {
+  color: #000;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-name a:hover {
+  color: #078169;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-email {
+  margin: 0;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-text > p {
+  margin: 10px 0;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-social-icons {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-social-icons a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 22px 0 0;
+  font-size: 13px;
+  color: #000;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-social-icons a:last-child {
+  margin: 0;
+}
+
+.qodef-author-description .qodef-author-description-text-holder .qodef-author-social-icons a:hover {
+  color: #078169;
+}
+
+/* Single author box styles - end
+	====================================================================== */
+/* Single posts navigation styles - begin
+    ====================================================================== */
+.qodef-blog-single-navigation {
+  position: relative;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  clear: both;
+  box-sizing: border-box;
+  margin-bottom: 37px;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-navigation-inner {
+  padding: 13px 0 49px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-nav-wrapper {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-blog-single-navigation .qodef-blog-single-nav-wrapper {
+    float: none;
+    width: 100%;
+  }
+  .qodef-blog-single-navigation .qodef-blog-single-nav-wrapper:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-prev .qodef-blog-single-nav-text,
+.qodef-blog-single-navigation .qodef-blog-single-next .qodef-blog-single-nav-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-prev .qodef-blog-single-nav-text > span,
+.qodef-blog-single-navigation .qodef-blog-single-next .qodef-blog-single-nav-text > span {
+  display: inline-block;
+  width: 100%;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-prev .qodef-blog-single-nav-text .qodef-blog-single-nav-title,
+.qodef-blog-single-navigation .qodef-blog-single-next .qodef-blog-single-nav-text .qodef-blog-single-nav-title {
+  margin: 0;
+  position: relative;
+  color: #969696;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-prev .qodef-blog-single-nav-text .qodef-blog-single-nav-label,
+.qodef-blog-single-navigation .qodef-blog-single-next .qodef-blog-single-nav-text .qodef-blog-single-nav-label {
+  margin: 0 0 6px;
+  font-weight: 500;
+  color: #5b5a5a;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-prev .qodef-blog-single-nav-text .qodef-blog-single-nav-label span,
+.qodef-blog-single-navigation .qodef-blog-single-next .qodef-blog-single-nav-text .qodef-blog-single-nav-label span {
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-prev .qodef-blog-single-nav-title {
+  padding-left: 16px;
+  padding-right: 25%;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-next {
+  text-align: right;
+}
+
+.qodef-blog-single-navigation .qodef-blog-single-next .qodef-blog-single-nav-title {
+  padding-right: 16px;
+  padding-left: 25%;
+}
+
+.qodef-single-links-pages {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 30px 0 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e1e1e1;
+  clear: both;
+}
+
+.qodef-single-links-pages .qodef-single-links-pages-inner > a,
+.qodef-single-links-pages .qodef-single-links-pages-inner > span {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0 5px;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #a3a3a3;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  line-height: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.qodef-single-links-pages .qodef-single-links-pages-inner > span {
+  color: #078169;
+}
+
+.qodef-single-links-pages .qodef-single-links-pages-inner > a:hover {
+  color: #078169;
+}
+
+/* Single posts navigation styles - end
+    ====================================================================== */
+/* Related posts styles - begin
+	====================================================================== */
+.qodef-related-posts-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.qodef-related-posts-holder .qodef-related-posts-holder-inner {
+  padding: 28px 0 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.qodef-related-posts-holder .qodef-related-posts-title {
+  margin: 0 0 20px;
+}
+
+.qodef-related-posts-holder .qodef-related-posts-title > * {
+  margin: 0;
+}
+
+.qodef-related-posts-holder .qodef-related-posts-inner {
+  margin: 0 -15px;
+}
+
+.qodef-related-posts-holder .qodef-related-post {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 25%;
+  margin: 0 0 30px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.qodef-content-has-sidebar .qodef-related-posts-holder .qodef-related-post {
+  widtH: 33.33333333333333%;
+}
+
+.touch .qodef-related-posts-holder .qodef-related-post {
+  cursor: pointer;
+}
+
+.qodef-related-posts-holder .qodef-related-post:hover .qodef-related-post-image a:after {
+  opacity: 1;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-related-post-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-related-post-image a {
+  position: relative;
+  display: block;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-related-post-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-related-post-image img {
+  display: block;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-title {
+  margin: 15px 0 0;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-title:first-child {
+  margin-top: 0;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-info {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-info > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  padding: 0 14px 0 0;
+  color: inherit;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-info > div:after {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  content: '|';
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-info > div:last-child {
+  padding: 0;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-info > div:last-child:after {
+  display: none;
+}
+
+.qodef-related-posts-holder .qodef-related-post .qodef-post-info > div a {
+  color: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Related posts styles - end
+	====================================================================== */
+/* ==========================================================================
+   Blog Single style - begin
+   ========================================================================== */
+.qodef-blog-holder.qodef-blog-single article {
+  margin: 0 0 30px;
+}
+
+.qodef-blog-holder.qodef-blog-single article .qodef-post-heading {
+  margin-bottom: 28px;
+}
+
+.qodef-blog-holder.qodef-blog-single article .qodef-post-text-main {
+  padding-bottom: 12px;
+}
+
+.qodef-blog-holder.qodef-blog-single article .qodef-post-text-single {
+  padding: 0 0 30px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.qodef-blog-holder.qodef-blog-single article.format-link .qodef-post-content, .qodef-blog-holder.qodef-blog-single article.format-quote .qodef-post-content {
+  margin-bottom: 28px;
+}
+
+.qodef-blog-holder.qodef-blog-single article.format-link .qodef-additional-content-text, .qodef-blog-holder.qodef-blog-single article.format-quote .qodef-additional-content-text {
+  padding-bottom: 12px;
+}
+
+.qodef-blog-holder.qodef-blog-single article.format-link .qodef-post-text-main, .qodef-blog-holder.qodef-blog-single article.format-quote .qodef-post-text-main {
+  padding-bottom: 0;
+}
+
+.qodef-blog-holder.qodef-blog-single article.format-link .qodef-post-additional-content, .qodef-blog-holder.qodef-blog-single article.format-quote .qodef-post-additional-content {
+  padding: 0 0 30px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* ==========================================================================
+   Blog Single style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode global style - begin
+   ========================================================================== */
+.qodef-blog-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.qodef-blog-list-holder .qodef-blog-list {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.qodef-blog-list-holder .qodef-bl-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.qodef-blog-list-holder .qodef-bli-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.qodef-blog-list-holder .qodef-bli-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.qodef-blog-list-holder .qodef-post-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 30px;
+}
+
+.qodef-blog-list-holder .qodef-post-image a {
+  display: block;
+}
+
+.qodef-blog-list-holder .qodef-post-image a:hover:after {
+  opacity: 1;
+}
+
+.qodef-blog-list-holder .qodef-post-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.qodef-blog-list-holder .qodef-post-image img {
+  display: block;
+}
+
+.qodef-blog-list-holder .qodef-bli-info {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 2px;
+  clear: both;
+}
+
+.qodef-blog-list-holder .qodef-bli-info > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 14px 0 0;
+  color: #a3a3a3;
+  font-size: 11px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.qodef-blog-list-holder .qodef-bli-info > div:after {
+  content: '|';
+  position: absolute;
+  top: 0;
+  right: -2px;
+}
+
+.qodef-blog-list-holder .qodef-bli-info > div:last-child {
+  padding: 0;
+}
+
+.qodef-blog-list-holder .qodef-bli-info > div:last-child:after {
+  content: '';
+}
+
+.qodef-blog-list-holder .qodef-bli-info > div a {
+  color: inherit;
+}
+
+.qodef-blog-list-holder .qodef-bli-info > div a:hover {
+  color: #078169;
+}
+
+.qodef-blog-list-holder .qodef-post-title {
+  margin: 0;
+}
+
+.qodef-blog-list-holder .qodef-post-excerpt {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 9px 0 0;
+}
+
+.qodef-blog-list-holder .qodef-post-excerpt p {
+  margin: 0;
+}
+
+.qodef-blog-list-holder .qodef-post-excerpt:after {
+  content: '...';
+}
+
+.qodef-blog-list-holder .qodef-post-read-more-button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 12px 0 0;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom {
+  margin-top: 19px;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 13px 0 0;
+  color: #000;
+  font-size: 13px;
+  letter-spacing: .025em;
+  font-family: "Roboto", sans-serif;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom > div.qodef-blog-share {
+  margin-left: 7px;
+  border-left: 1px solid #e1e1e1;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom > div.qodef-blog-share .qodef-social-share-holder {
+  padding-left: 24px;
+  vertical-align: middle;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom > div.qodef-blog-share .qodef-social-share-holder ul {
+  vertical-align: middle;
+  line-height: 0;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom > div.qodef-blog-like .qodef-like {
+  padding-left: 2px;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom > div.qodef-blog-like .qodef-like span {
+  padding-left: 4px;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom > div:last-child {
+  padding: 0;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom > div a {
+  color: inherit;
+}
+
+.qodef-blog-list-holder .qodef-bli-info-bottom > div a:hover {
+  color: #078169;
+}
+
+/* ==========================================================================
+   Blog List shortcode global style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Minimal type style - begin
+   ========================================================================== */
+.qodef-blog-list-holder.qodef-bl-minimal h6.qodef-post-title {
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.qodef-blog-list-holder.qodef-bl-minimal .qodef-post-info-date {
+  display: block;
+  margin: 8px 0 0;
+}
+
+.qodef-blog-list-holder.qodef-bl-minimal .qodef-post-info-date a {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 1.3em;
+  font-weight: 400;
+  color: #1b1b1b;
+  color: #a3a3a3;
+  line-height: 1em;
+}
+
+.qodef-blog-list-holder.qodef-bl-minimal .qodef-post-info-date a:hover {
+  color: #078169;
+}
+
+/* ==========================================================================
+   Blog List shortcode - Minimal type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Simple type style - begin
+   ========================================================================== */
+.qodef-blog-list-holder.qodef-bl-simple .qodef-post-image {
+  display: table-cell;
+  vertical-align: middle;
+  width: 73px;
+}
+
+.qodef-blog-list-holder.qodef-bl-simple .qodef-post-image a:after {
+  display: none;
+}
+
+.qodef-blog-list-holder.qodef-bl-simple h6.qodef-post-title {
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.qodef-blog-list-holder.qodef-bl-simple .qodef-bli-content {
+  display: table-cell;
+  vertical-align: middle;
+  width: auto;
+  padding-left: 13px;
+}
+
+.qodef-blog-list-holder.qodef-bl-simple .qodef-bli-content .qodef-post-info-date {
+  display: block;
+  margin: 8px 0 0;
+  line-height: 1;
+}
+
+.qodef-blog-list-holder.qodef-bl-simple .qodef-bli-content .qodef-post-info-date a {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 1.3em;
+  font-weight: 400;
+  color: #1b1b1b;
+  color: #a3a3a3;
+  line-height: 1em;
+}
+
+.qodef-blog-list-holder.qodef-bl-simple .qodef-bli-content .qodef-post-info-date a:hover {
+  color: #078169;
+}
+
+.qodef-blog-list-holder.qodef-bl-simple .qodef-no-featured .qodef-bli-content {
+  padding-left: 0;
+}
+
+/* ==========================================================================
+   Blog List shortcode - Simple type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode - Standard type style - begin
+   ========================================================================== */
+.qodef-blog-list-holder.qodef-bl-standard .qodef-post-image .qodef-post-info-date {
+  display: inline-block;
+  height: 47px;
+  line-height: 47px;
+  padding: 0 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.qodef-blog-list-holder.qodef-bl-standard .qodef-post-image .qodef-post-info-date a {
+  color: inherit;
+}
+
+.qodef-blog-list-holder.qodef-bl-standard:not(.qodef-bl-one-column) .qodef-bl-item {
+  float: left;
+}
+
+.qodef-blog-list-holder.qodef-bl-standard.qodef-bl-two-columns .qodef-bl-item {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-two-columns .qodef-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.qodef-blog-list-holder.qodef-bl-standard.qodef-bl-three-columns .qodef-bl-item {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-three-columns .qodef-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.qodef-blog-list-holder.qodef-bl-standard.qodef-bl-four-columns .qodef-bl-item {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-four-columns .qodef-bl-item:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.qodef-blog-list-holder.qodef-bl-standard.qodef-bl-five-columns .qodef-bl-item {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .qodef-blog-list-holder.qodef-bl-standard.qodef-bl-five-columns .qodef-bl-item:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode - Standard type style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog List loading element style - begin
+   ========================================================================== */
+.qodef-bl-loading {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+.qodef-bl-loading.qodef-showing {
+  display: block;
+}
+
+.qodef-bl-loading > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-animation: bl-bouncedelay 1.4s infinite ease-in-out both;
+  -moz-animation: bl-bouncedelay 1.4s infinite ease-in-out both;
+  animation: bl-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.qodef-bl-loading .qodef-bl-loading-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.qodef-bl-loading .qodef-bl-loading-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bl-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes bl-bouncedelay {
+  0%, 80%, 100% {
+    -moz-transform: scale(0);
+  }
+  40% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes bl-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Blog List loading element style - end
+   ========================================================================== */
+/* ==========================================================================
+   Blog styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-map.css.map */

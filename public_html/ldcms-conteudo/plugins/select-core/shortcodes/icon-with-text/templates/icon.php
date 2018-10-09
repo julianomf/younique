@@ -1,0 +1,1 @@
+<?php echo eiddo_qodef_execute_shortcode('qodef_icon', $icon_parameters); ?>

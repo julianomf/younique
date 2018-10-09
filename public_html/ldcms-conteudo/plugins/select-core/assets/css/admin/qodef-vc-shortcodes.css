@@ -1,0 +1,7 @@
+.extended-custom-icon{
+	background-image: url('img/vc-shortcodes.png') !important; /* to override Visual Composer css style */
+	background-size: auto !important; /* to override Visual Composer css style */
+}
+#qodef_property_leasing_terms_container, #qodef_property_costs_container, #qodef_property_multi_units_container, #qodef_property_home_plans_container,#qodef_property_contact_container{
+	display:none!important;
+}

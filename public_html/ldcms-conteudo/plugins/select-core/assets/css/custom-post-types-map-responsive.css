@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Blog List shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .qodef-testimonials-holder.qodef-testimonials-four-columns .qodef-pl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .qodef-testimonials-holder.qodef-testimonials-four-columns .qodef-pl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .qodef-testimonials-holder.qodef-testimonials-five-columns .qodef-pl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .qodef-testimonials-holder.qodef-testimonials-five-columns .qodef-pl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .qodef-testimonials-holder.qodef-testimonials-six-columns .qodef-pl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  .qodef-testimonials-holder.qodef-testimonials-six-columns .qodef-pl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qodef-testimonials-holder .qodef-pl-item {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/select-core/assets/css/custom-post-types-map-responsive.css.map */

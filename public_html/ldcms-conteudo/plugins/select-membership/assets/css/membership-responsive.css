@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+.page-template-user-dashboard .qodef-content {
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-template-user-dashboard .qodef-membership-dashboard-nav-holder {
+    width: 100%;
+    float: none;
+  }
+  .page-template-user-dashboard .qodef-membership-dashboard-nav-holder .qodef-membership-dashboard-nav {
+    display: block;
+  }
+  .page-template-user-dashboard .qodef-membership-dashboard-nav-holder .qodef-membership-dashboard-nav li {
+    display: block;
+  }
+  .page-template-user-dashboard .qodef-membership-dashboard-nav-holder .qodef-membership-dashboard-nav li a {
+    padding: 15px 0;
+    text-align: left;
+  }
+  .page-template-user-dashboard .qodef-membership-dashboard-nav-holder .qodef-membership-dashboard-nav li a .qodef-dash-icon {
+    min-width: 50px;
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+  .page-template-user-dashboard .qodef-membership-dashboard-content-holder {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/select-membership/assets/css/membership-responsive.css.map */
